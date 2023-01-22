@@ -14,6 +14,7 @@ const config = {
 		alias: {
 			'@routes/*': 'src/routes/*',
 			'@components/*': 'src/components/*',
+			'@type/*': 'src/types/*',
 			'@assets/*': 'src/assets/*'
 		}
 	}
