@@ -1,0 +1,94 @@
+{
+	"2022-01-13": {
+		"squat": {
+			"exercise": "squat",
+			"part": "lower-body",
+			"weight": 50,
+			"success": true,
+			"date": "2022-01-13"
+		},
+		"bench-press": {
+			"exercise": "bench-press",
+			"part": "chest",
+			"weight": 30,
+			"success": false,
+			"date": "2022-01-13"
+		},
+		"deadlift": {
+			"exercise": "deadlift",
+			"part": "back",
+			"weight": 60,
+			"success": true,
+			"date": "2022-01-13"
+		}
+	},
+	"2022-01-16": {
+		"squat": {
+			"exercise": "squat",
+			"part": "lower-body",
+			"weight": 55,
+			"success": true,
+			"date": "2022-01-16"
+		},
+		"bench-press": {
+			"exercise": "bench-press",
+			"part": "chest",
+			"weight": 30,
+			"success": true,
+			"date": "2022-01-16"
+		},
+		"lat-pull-down": {
+			"exercise": "lat-pull-down",
+			"part": "back",
+			"weight": 55,
+			"success": false,
+			"date": "2022-01-16"
+		}
+	},
+	"2022-01-18": {
+		"squat": {
+			"exercise": "squat",
+			"part": "lower-body",
+			"weight": 60,
+			"success": true,
+			"date": "2022-01-18"
+		},
+		"bench-press": {
+			"exercise": "bench-press",
+			"part": "chest",
+			"weight": 35,
+			"success": false,
+			"date": "2022-01-18"
+		},
+		"barbell-row": {
+			"exercise": "barbell-row",
+			"part": "back",
+			"weight": 40,
+			"success": true,
+			"date": "2022-01-18"
+		}
+	},
+	"2022-01-20": {
+		"squat": {
+			"exercise": "squat",
+			"part": "lower-body",
+			"weight": 65,
+			"success": true,
+			"date": "2022-01-20"
+		},
+		"bench-press": {
+			"exercise": "bench-press",
+			"part": "chest",
+			"weight": 30,
+			"success": true,
+			"date": "2022-01-20"
+		},
+		"deadlift": {
+			"exercise": "deadlift",
+			"part": "back",
+			"weight": 70,
+			"success": true,
+			"date": "2022-01-20"
+		}
+	}
+}
