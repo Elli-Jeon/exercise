@@ -13,7 +13,8 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			'@routes/*': 'src/routes/*',
-			'@components/*': 'src/components/*'
+			'@components/*': 'src/components/*',
+			'@type/*': 'src/types/*'
 		}
 	}
 };
