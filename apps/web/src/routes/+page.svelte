@@ -46,5 +46,15 @@
 	];
 </script>
 
-<RecentExercises exercises={recentExericses} />
-<ExercisesList exercises={exercisesList} />
+<div id="home-page-container" class="relative flex h-full w-full flex-col">
+	<div class="bg-primary h-1/3">
+		<div class="absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2">
+			<RecentExercises exercises={recentExericses} />
+		</div>
+	</div>
+	<div
+		class="scrollbar-hide flex flex-1 items-start justify-center overflow-y-auto bg-gray-200 pt-16"
+	>
+		<ExercisesList exercises={exercisesList} />
+	</div>
+</div>

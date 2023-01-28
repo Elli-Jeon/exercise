@@ -12,19 +12,25 @@
 </script>
 
 <div id="background" class="flex h-screen w-screen items-center justify-center bg-slate-50">
-	<div id="layout-container" class="max-h-240 relative h-screen max-w-xl border bg-slate-100">
+	<div
+		id="layout-container"
+		class="max-h-160 relative flex h-screen w-full max-w-sm flex-col border bg-slate-100"
+	>
 		<slot />
-		<div id="navigation-background" class="absolute bottom-0 flex h-20 w-full justify-center pb-3">
+		<div
+			id="navigation-background"
+			class="bottom-0 flex h-20 w-full justify-center bg-gray-200 pb-2 pt-1"
+		>
 			<div
 				id="navigation-container"
-				class="flex h-16 w-full max-w-sm items-center justify-center rounded-lg bg-white"
+				class="flex h-14 w-full max-w-xs items-center justify-center rounded-lg bg-white drop-shadow-md"
 			>
 				{#each tabs as tab (tab.name)}
 					<div
 						class={`flex h-full w-full flex-1 items-center justify-center rounded-lg hover:cursor-pointer ${
 							tab.name === 'exercise'
-								? 'bg-blue-600 hover:bg-blue-700'
-								: 'bg-white hover:bg-slate-50'
+								? 'bg-primary hover:bg-primary-dark'
+								: 'bg-white hover:bg-gray-50'
 						}`}
 					>
 						<Icon icon={tab.icon} />

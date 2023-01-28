@@ -4,7 +4,7 @@
 	export let exercises: IExercise[];
 </script>
 
-<div class="flex w-90 flex-col divide-y-2 rounded-2xl border">
+<div class="w-90 flex flex-col divide-y-2 rounded-2xl border bg-white">
 	{#each exercises as { exercise, weight, success, date } (exercise)}
 		<div class="flex h-20 w-full items-center justify-center space-x-2 p-4">
 			<div class=" h-10 w-10 rounded-full border bg-gray-200" />
