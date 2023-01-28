@@ -19,7 +19,7 @@
 		<slot />
 		<div
 			id="navigation-background"
-			class="bottom-0 flex h-20 w-full justify-center bg-gray-200 pb-2 pt-1"
+			class="bottom-0 flex h-20 w-full justify-center bg-gray-100 pb-2 pt-1"
 		>
 			<div
 				id="navigation-container"
