@@ -1,18 +1,50 @@
 <script lang="ts">
-	let exercises = [
-		{ exercise: '스쿼트', weight: 0 },
-		{ exercise: '벤치프레스', weight: 0 },
-		{ exercise: '데드리프트', weight: 0 }
+	import ExercisesList from '@components/ExercisesList.svelte';
+	import RecentExercises from '@components/RecentExercises.svelte';
+	import type { IExercise, IRecentExercise } from '@type/exercise';
+
+	let recentExericses: IRecentExercise[] = [
+		{
+			exercise: 'squat',
+			weight: 55,
+			success: true
+		},
+		{
+			exercise: 'barbell-row',
+			weight: 35,
+			success: false
+		},
+		{
+			exercise: 'deadlift',
+			weight: 50,
+			success: true
+		}
+	];
+
+	let exercisesList: IExercise[] = [
+		{
+			exercise: 'squat',
+			part: 'lower-body',
+			weight: 55,
+			success: true,
+			date: '0122'
+		},
+		{
+			exercise: 'bench-press',
+			part: 'chest',
+			weight: 35,
+			success: false,
+			date: '0122'
+		},
+		{
+			exercise: 'deadlift',
+			part: 'back',
+			weight: 50,
+			success: true,
+			date: '0122'
+		}
 	];
 </script>
 
-{#each exercises as { exercise, weight } (exercise)}
-	<label>
-		{exercise}
-		<input type="number" name={exercise} bind:value={weight} />
-	</label>
-{/each}
-
-{#each exercises as { exercise, weight } (exercise)}
-	<div>{exercise} : {weight}</div>
-{/each}
+<RecentExercises exercises={recentExericses} />
+<ExercisesList exercises={exercisesList} />
