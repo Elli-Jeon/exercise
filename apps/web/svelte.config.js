@@ -28,7 +28,8 @@ const config = {
 			'@routes/*': 'src/routes/*',
 			'@components/*': 'src/components/*',
 			'@type/*': 'src/types/*',
-			'@assets/*': 'src/assets/*'
+			'@assets/*': 'src/assets/*',
+			'@lib/*': 'src/lib/*'
 		}
 	}
 };

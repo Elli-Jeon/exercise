@@ -6,4 +6,11 @@ export interface IExercise {
 	date: string;
 }
 
-export type IRecentExercise = Pick<IExercise, 'exercise' | 'weight' | 'success'>;
+export interface IExerciseRecord {
+	id: number;
+	exercise_name: string;
+	weight: number;
+	success: boolean;
+	created_at: string;
+	user_name: string;
+}

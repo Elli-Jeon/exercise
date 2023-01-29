@@ -1,25 +1,12 @@
 <script lang="ts">
 	import ExercisesList from '@components/ExercisesList.svelte';
 	import RecentExercises from '@components/RecentExercises.svelte';
-	import type { IExercise, IRecentExercise } from '@type/exercise';
+	import type { IExercise } from '@type/exercise';
 
-	let recentExericses: IRecentExercise[] = [
-		{
-			exercise: 'squat',
-			weight: 55,
-			success: true
-		},
-		{
-			exercise: 'barbell-row',
-			weight: 35,
-			success: false
-		},
-		{
-			exercise: 'deadlift',
-			weight: 50,
-			success: true
-		}
-	];
+	export let data: any;
+
+	let { recent } = data;
+	$: ({ recent } = data);
 
 	let exercisesList: IExercise[] = [
 		{
@@ -50,7 +37,7 @@
 	<div class="bg-primary h-1/3 p-3">
 		<h1 class="text-3xl">어제의 운동</h1>
 		<div class="absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2">
-			<RecentExercises exercises={recentExericses} />
+			<RecentExercises exercises={recent} />
 		</div>
 	</div>
 	<div
