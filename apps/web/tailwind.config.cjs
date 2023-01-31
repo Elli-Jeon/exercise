@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors');
+const plugin = require('tailwindcss/plugin');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -21,5 +22,12 @@ module.exports = {
 			}
 		}
 	},
-	plugins: []
+	plugins: [
+		// Change Rem to 10px
+		plugin(function ({ addBase }) {
+			addBase({
+				html: { fontSize: '10px' }
+			});
+		})
+	]
 };
