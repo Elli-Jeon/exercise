@@ -23,7 +23,7 @@
 <div id="background" class="flex h-screen w-screen items-center justify-center bg-slate-50">
 	<div
 		id="layout-container"
-		class="max-h-160 relative flex h-screen w-full max-w-sm flex-col border bg-slate-100"
+		class="md:max-h-160 relative flex h-screen w-full flex-col border bg-slate-100 md:max-w-sm"
 	>
 		<slot />
 		<div
