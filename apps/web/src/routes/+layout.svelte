@@ -2,6 +2,7 @@
 	import '../app.css'; // tailwind
 	import Icon from '@components/Icon.svelte';
 	import Modal from '@components/Modal.svelte';
+	import RecordUpdator from '@components/RecordUpdator.svelte';
 
 	let tabs = [
 		{ name: 'home', icon: 'home' },
@@ -53,11 +54,10 @@
 
 {#if showModal}
 	<Modal on:close={() => (showModal = false)}>
-		<h2 slot="header">
-			modal
-			<small><em>adjective</em> mod·al \ˈmō-dəl\</small>
-		</h2>
+		<h2 slot="header">운동 기록</h2>
 
-		<div />
+		<div>
+			<RecordUpdator />
+		</div>
 	</Modal>
 {/if}
