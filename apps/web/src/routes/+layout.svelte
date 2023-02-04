@@ -28,11 +28,11 @@
 		<slot />
 		<div
 			id="navigation-background"
-			class="bottom-0 flex h-20 w-full justify-center bg-gray-100 pb-2 pt-1"
+			class="bottom-0 flex h-24 w-full justify-center bg-gray-100 pb-2 pt-1"
 		>
 			<div
 				id="navigation-container"
-				class="flex h-14 w-full max-w-xs items-center justify-center rounded-lg bg-white drop-shadow-md"
+				class="flex h-20 w-full max-w-md items-center justify-center rounded-lg bg-white drop-shadow-md"
 			>
 				{#each tabs as tab (tab.name)}
 					<button

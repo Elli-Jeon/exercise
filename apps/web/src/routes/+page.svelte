@@ -18,7 +18,7 @@
 		</div>
 	</div>
 	<div
-		class="scrollbar-hide flex flex-1 flex-col items-start justify-center overflow-y-auto bg-gray-100 px-3 pt-12"
+		class="scrollbar-hide flex flex-1 flex-col items-start justify-start overflow-y-auto bg-gray-100 px-3 pt-12"
 	>
 		<h2 class="pb-1 text-xl">운동 별 최근기록</h2>
 		<ExercisesList exercises={latest} />
