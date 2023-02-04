@@ -1,6 +1,7 @@
 <script>
 	import supabase from '@lib/api/supabaseClient';
 	import Input from './Input.svelte';
+	// import { Input } from 'ui';
 
 	let squat = 0;
 	let benchPress = 0;
